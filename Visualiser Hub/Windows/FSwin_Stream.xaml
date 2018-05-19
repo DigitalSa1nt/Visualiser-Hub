@@ -1,0 +1,25 @@
+﻿<Window x:Name="winStreamFS" x:Class="Visualiser_Hub.Windows.FSwin_Stream"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Visualiser_Hub.Windows"
+        mc:Ignorable="d"
+        Title="Fullscreen - Stream" Height="535" Width="768" Unloaded="winStreamFS_Unloaded" WindowState="Maximized" Icon="/Visualiser Hub;component/Icon4.ico">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Visualiser Hub;component/Resources/BGPlainBlue.png"/>
+        </Grid.Background>
+        <Image x:Name="imgStream" RenderOptions.BitmapScalingMode="Fant" Margin="0" Stretch="UniformToFill">
+            <Image.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.LayoutTransform>
+        </Image>
+
+    </Grid>
+</Window>
